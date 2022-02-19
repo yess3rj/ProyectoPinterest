@@ -1,0 +1,180 @@
+:root{
+    --rojo: #E60023;
+    --rdark: #AE0D31;
+    --blanco: #ffffff;
+    --gris: #d8d8d8; 
+
+    
+}
+
+html{
+    font-size: 62.5;
+    /* gracias a esto el padding no afecta al tamaño */
+    box-sizing: border-box; /* hack para box model */
+}
+
+/* * Indica que aplica para todo el contenido*/
+*, *:before, *:after {
+    box-sizing: inherit; 
+  }
+
+body{
+    font-size: 16px;
+    display: inline;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: Arial;
+}
+
+
+/* Clase contenedor para centrar en el sitio */
+.contenedor{
+    /* si es que hay 120rem */
+    max-width: 90rem; /*Acorta o ensancha el largo*/
+    /* margin: TOP RIGTH BOT LEFT */
+    margin:auto; /* En que posicion se coloca un elemento */
+    /* Si solo hay 2 valores sobreentiende que 0 es top y bot */
+    /* width: 600px; */
+    
+   
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        /* si es que hay 120rem */
+        max-width: 90rem; /*Acorta o ensancha el largo*/
+        /* margin: TOP RIGTH BOT LEFT */
+        margin: auto; /* En que posicion se coloca un elemento */
+        /* Si solo hay 2 valores sobreentiende que 0 es top y bot */
+        width: 1100px; 
+        display: flex;
+    }
+}
+
+
+.sombra{
+    -webkit-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.18);
+box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.18);
+
+border-radius: 2rem;
+}
+
+.titulo-link {
+    color:black;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+p{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.imagen-busqueda img{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.columna-derecha{
+    padding-left: 2rem;
+    width: 600px;
+}
+
+.descripcion-imagen{
+    
+    width: 450px;
+}
+
+.navegacion-2da{
+    height: 60px;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+.navegacion-2sub1 {
+    /* Los coloca en fila (ROW) */
+    display: flex;
+    
+}
+
+.icono{
+    /*flex dar movilidad a las imagenes de forma vertical*/
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+
+ 
+.circulo:hover{
+    background-color:var(--gris) ;
+    border-radius: 50%;
+
+}
+
+
+
+
+.navegacion-2sub2{
+    display: flex;
+    align-items:center;
+    
+}
+.chevron{
+    cursor: pointer;
+    margin-left: .3rem;
+}
+
+.navegacion-2sub2 #tablero{
+    text-transform: uppercase;
+}
+
+/* Boton rojo */
+.guardar{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: .9rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2rem;
+    text-align: center;
+    margin-left: .9rem;
+}
+
+.navegacion-2sub2 a:hover{
+    background-color:var(--rdark) ;
+}
+
+/*3a fila padre*/
+
+.usuario-datos{
+    display: flex;
+}
+
+p{
+
+    margin 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

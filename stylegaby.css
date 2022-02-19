@@ -1,0 +1,267 @@
+@media only screen and (min-width: 700px) and (max-width: 1800px){
+    body{
+        margin: 0;
+    }
+    nav{
+        height: 10vh;
+        width: 95vw;
+        /*background-color: gray;*/
+        margin: 20px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    p.a{
+        background-color: white;
+        padding: 0 12px 2px 12px;
+        border-radius: 50%;
+        color: black;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 40px;
+        justify-items: center;
+        text-align: center;
+        font-weight: bold;
+        position: fixed;
+        bottom: 12%;
+        right: 5%;
+        cursor: pointer;
+        z-index: +1;
+    }
+    
+    p.a:hover{
+        background-color: rgb(216, 211, 211);
+        border: white 3px solid;
+    } 
+    
+    p.b{
+        background-color: white;
+        padding: 0 17px;
+        border-radius: 50%;
+        color: black;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 40px;
+        justify-items: center;
+        font-weight: bold;
+        position: fixed;
+        bottom: 2%;
+        right: 5%;
+        z-index: +1;
+        cursor: pointer;
+    }
+    
+    p.b:hover{
+        background-color: rgb(216, 211, 211);
+        border: white 3px solid;
+    } 
+    
+    main{
+        display: grid;
+        width: 95vw;
+        grid-template: repeat(25, 9vh) / repeat(5, 16vw);
+        gap: 2vh 3vw;
+        justify-content: center;
+        z-index: 1; /*Para que el menú desplegable quede sobre las imágenes*/
+    }
+    
+    figure.a{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+    
+    figure.b{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    
+    figure.c{
+        margin: 0;
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+    
+    figure.d{
+        margin: 0;
+        grid-column: 4/5;
+        grid-row: 1/6;
+    }
+    
+    figure.e{
+        margin: 0;
+        grid-column: 5/6;
+        grid-row: 1/6;
+    }
+    
+    figure.f{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 6/10;
+    }
+    
+    figure.g{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 4/9;
+    }
+    
+    figure.h{
+        margin: 0;
+        grid-column: 3/4;
+        grid-row: 4/9;
+    }
+    
+    figure.i{
+        margin: 0;
+        grid-column: 4/5;
+        grid-row: 6/11;
+    }
+    
+    figure.j{
+        margin: 0;
+        grid-column: 5/6;
+        grid-row: 6/11;
+    }
+    
+    figure.aa{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 11/14;
+    }
+    
+    figure.bb{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 9/14;
+    }
+    
+    figure.cc{
+        margin: 0;
+        grid-column: 3/4;
+        grid-row: 9/13;
+    }
+    
+    figure.dd{
+        margin: 0;
+        grid-column: 4/5;
+        grid-row: 11/15;
+    }
+    
+    figure.ee{
+        margin: 0;
+        grid-column: 5/6;
+        grid-row: 11/16;
+    }
+    
+    figure.ff{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 14/17;
+    }
+    
+    figure.gg{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 14/17;
+    }
+    
+    figure.hh{
+        margin: 0;
+        grid-column: 3/4;
+        grid-row: 13/16;
+    }
+    
+    figure.ii{
+        margin: 0;
+        grid-column: 4/5;
+        grid-row: 15/19;
+    }
+    
+    figure.jj{
+        margin: 0;
+        grid-column: 5/6;
+        grid-row: 16/20;
+    }
+    
+    .imagen{
+        position: relative;
+        width: 15vw;
+        cursor: zoom-in;
+    }
+    
+    .imagena{
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 20px;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 10%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .middle2{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .imagen:hover .imagena{
+        opacity: 0.5;
+    } 
+    
+    .imagen:hover .middle{
+        opacity: 1;
+    }
+
+    .imagen:hover .middle2{
+        opacity: 1;
+    }   
+
+    .bot{
+        background-color: red;
+        border: 0;
+        border-radius: 20px;
+        padding: 3px 7px;
+        color: white;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .bot2{
+        border: 0;
+        outline: 0;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.158);
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    figcaption{
+        color: black;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
